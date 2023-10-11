@@ -25,6 +25,7 @@ function loadData() {
 function addToPage(data) {
     data.forEach((movie) => {
         const li = document.createElement("li");
+        const li2 = document.createElement("li");
         const mins = (parseInt(movie.duration) % 60);
         const hours = ((parseInt(movie.duration) - (parseInt(movie.duration) % 60)) / 60);
         li.textContent = movie.movie_title + "(" + movie.director_name + ", " + movie.title_year + ", " + hours + ":" + mins + ")";
@@ -41,13 +42,13 @@ function addToPage(data) {
     });
 };
 
-function addToQueue() {
-    const item = ul.getElementsByTagName("li");
-    for (let i = 0; i < item.length; i++) {
-        const li = document.createElement("li");
-        if (item[i].classList.st) {
-            console.log(ul[i]);
-            li.textContent = ul[i];
-        }
-    }
-}
+// function addToQueue() {
+//     const item = ul.getElementsByTagName("li");
+//     for (let i = 0; i < item.length; i++) {
+//         const li = document.createElement("li");
+//         if (item[i].classList.st) {
+//             console.log(ul[i]);
+//             li.textContent = ul[i];
+//         }
+//     }
+// }
