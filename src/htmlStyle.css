@@ -1,0 +1,21 @@
+header {
+    width:100%;
+    height:100vh;
+    background-position:center;
+}
+
+h1 {
+    padding-left:50px;
+
+}
+
+div ul {
+    border-right: thing black solid;
+    min-height:200px;
+    max-height:500px;
+    width:20%;
+    overflow:hidden;
+    overflow-y:scroll;
+}
+
+div

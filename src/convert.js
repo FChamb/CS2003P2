@@ -16,12 +16,12 @@ function convertToJSON(data) {
     return jsonFormat;
 }
 
-function loadFiles() {
+function loadFiles(csv, json) {
     var fs = require("fs");
-    var movieData = fs.readFileSync("../data/movie_metadata_subset.csv", { encoding: "utf8", flag: "r"});
+    var movieData = fs.readFileSync(csv, {encoding: "utf8", flag: "r"});
 
     var jsonMovieData = convertToJSON(movieData);
-    fs.writeFileSync("../data/movie_metadata_subset.json", JSON.stringify(jsonMovieData));
+    fs.writeFileSync(json, JSON.stringify(jsonMovieData));
 }
 
-loadFiles()
+loadFiles("../data/movie_metadata_subset.csv", "../data/movie_metadata_subset.json")
