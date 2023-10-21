@@ -1,4 +1,4 @@
-.webpage {
+body {
     background-color:beige;
 }
 
@@ -7,46 +7,53 @@ h1 {
     color:darkred;
     font-size:32px;
     padding-left:50px;
-    padding-top:10px;
+    padding-top:5px;
     display:inline;
     float:left;
 }
 h2 {
     font-weight:bold;
-    color:grey;
+    color:green;
     font-size: 32px;
-    padding-left:1000px;
+    padding-right:50px;
     display:inline;
-    float:left;
+    float:right;
+}
+
+#searchbar {
+    width:40vh;
+    font-size:16px;
+    border:1px solid #ddd;
+    display:block;
+    margin:0 auto;
+}
+
+#database {
+    list-style-type:none;
 }
 
 .movieDataBase {
     clear:both;
     min-height:200px;
     height:70vh;
-    width:20%;
+    width:30%;
+    font-size:18px;
     overflow:hidden;
     overflow-y:scroll;
-    float:left;
     display:inline-block;
+    float:left;
 }
 
 .movieQueue {
-    clear:both;
     min-height:200px;
     height:70vh;
-    width:20%;
+    width:30%;
+    font-size:18px;
     overflow:hidden;
     overflow-y:scroll;
+    float:right;
     display:inline-block;
-    padding-left:920px;
-}
-
-.refresh {
-    position:absolute;
-    top:85vh;
-    left:17vh;
-    font-size:x-large;
+    color:green;
 }
 
 .active {
