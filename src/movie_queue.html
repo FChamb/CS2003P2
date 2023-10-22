@@ -9,13 +9,18 @@
     <div class="webpage">
         <h1>Movie Database</h1>
         <h2>My Movie Queue</h2>
-        <input type="text" id="searchbar" onkeyup="search()" placeholder="Search for movie...">
         <div class="movieDataBase">
             <ul id="database"></ul>
         </div>
+        <h3>Click to add to Queue &#x2934;</h3>
+        <h4>Click again to remove</h4>
+        <h5>Type here to search a movie &#x2935;</h5>
+        <input type="text" id="searchbar" onkeyup="search()" placeholder="Search for movie...">
         <div class="movieQueue">
-            <ul id="queue"></ul>
+            <ol id="queue"></ol>
         </div>
+        <p id="counter"># of Movies: 0<br>Watch Time: 0:0</p>
+        <h6>Click to remove &#x2935;</h6>
     </div>
     <script src="movieData.js"></script>
 </body>

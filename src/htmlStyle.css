@@ -5,54 +5,94 @@ body {
 h1 {
     font-weight:bold;
     color:darkred;
-    font-size:32px;
-    padding-left:50px;
-    padding-top:5px;
-    display:inline;
+    font-size:4vh;
+    padding-left:7vh;
+    padding-top:1vh;
     float:left;
 }
 h2 {
     font-weight:bold;
     color:green;
-    font-size: 32px;
-    padding-right:50px;
-    display:inline;
+    font-size:4vh;
+    padding-right:12vh;
     float:right;
+}
+
+h3 {
+    color:green;
+    font-size:3vh;
+    position:absolute;
+    top:82vh;
+    left:8vh;
+}
+
+h4 {
+    color:darkred;
+    font-size:2vh;
+    position:absolute;
+    top:88vh;
+    left:30vh;
+    transform:rotate(340deg);
+}
+
+h5 {
+    color:darkred;
+    background-color:yellow;
+    font-size:1.6vh;
+    position:absolute;
+    top:3vh;
+    left:74vh;
+}
+
+p {
+    color:red;
+    position:absolute;
+    top:83vh;
+    right:35vh;
+}
+
+h6 {
+    color:darkred;
+    font-size:2vh;
+    position:absolute;
+    top:7vh;
+    right:16vh;
 }
 
 #searchbar {
     width:40vh;
-    font-size:16px;
-    border:1px solid #ddd;
+    font-size:2vh;
+    border:0.3vh;
+    border-style:solid;
+    border-color:lightgrey;
+    background-color:white;
     display:block;
-    margin:0 auto;
+    position:absolute;
+    left:65vh;
+    top:10vh;
 }
 
-#database {
-    list-style-type:none;
-}
+
 
 .movieDataBase {
     clear:both;
-    min-height:200px;
+    min-height:50vh;
     height:70vh;
-    width:30%;
-    font-size:18px;
+    width:50vh;
+    font-size:2.25vh;
     overflow:hidden;
     overflow-y:scroll;
-    display:inline-block;
     float:left;
 }
 
 .movieQueue {
-    min-height:200px;
+    min-height:50vh;
     height:70vh;
-    width:30%;
-    font-size:18px;
+    width:50vh;
+    font-size:2.25vh;
     overflow:hidden;
     overflow-y:scroll;
     float:right;
-    display:inline-block;
     color:green;
 }
 
@@ -61,6 +101,6 @@ h2 {
     font-weight:bold;
 }
 .inactive {
-    color:black;
+    color:darkred;
     font-weight:lighter;
 }
